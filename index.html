@@ -10,17 +10,13 @@
 			let actions={
 				"google":"https://www.google.com/",
 				"duckDuckGo":"https://duckduckgo.com/",
-				"Bing":"https://duckduckgo.com/",
-				"Ask":"https://duckduckgo.com/"
+				"Bing":"https://bing.com/",
+				"Ask":"https://ask.com/"
 			}
 			let action=actions[selectedEngine.value]
 
 			form.setAttribute("action",action)
-
-		}
-		
-	
-		
+		}	
 		window.addEventListener("load", function(){
 			const form =document.getElementById("searchForm")
 			form.addEventListener("submit",setSearchEngine())
